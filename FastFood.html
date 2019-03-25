@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fast Food</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        header{
+            background-color: #c00a27;
+            width: 100%;
+        }
+        .bg{
+            background-image: url(back1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+            min-height: 100vh;
+            height:100%;
+        }
+        footer{
+            background-color: #777777;
+            text-align: center;
+            height: 200px;
+            width: 100%;
+            margin-top: auto;
+        }
+        @font-face {
+            font-family: heroes;
+            src: url(fonts/CHEESEPIZZA.ttf);
+        }
+        .heroes{
+            font-family: 'heroes';
+	        font-size: 60pt;
+	        font-variant: inherit; 
+            padding-left: 50px;
+        }
+        .navmenu{
+            color: aqua;
+            font-family: 'heroes';
+            font-size: 25pt;
+            margin-left: 10px;
+        }
+        .box{
+            width: 300px;
+            height: 450px;
+            margin: 0px 20px 0 20px;
+            background: aqua;
+            float:left;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <div>
+                <a class="heroes" style="color:aqua">Heroes Food</a>
+                <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link navmenu" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navmenu" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navmenu" href="#">About</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="bg">
+                <h1 class="heroes" style="text-align:center;font-size: 50pt;">content</h1>
+                <div>
+                    <p class="box"></p>
+                    <p class="box"></p>
+                    <p class="box"></p>
+                </div>
+                
+            </div>
+            <footer>
+                <div>
+                    <h1 class="heroes" style="padding-left: 0">Heroes Food</h1>
+                    <p>© 2019 Heroes Food. All rights reserved. Designed by Nurmajid</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>
