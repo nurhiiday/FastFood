@@ -3,6 +3,7 @@
 <head>
     <title>Fast Food</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <style>
         body{
@@ -52,6 +53,28 @@
             float:left;
         }
 
+        div.gallery {
+            margin: 5px;
+            border: 3px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 3px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        div.desc {
+            color: aqua;
+            padding: 15px;
+            text-align: center;
+            background-color: #212121;
+        }
+
     </style>
 </head>
 <body>
@@ -77,10 +100,24 @@
         <section>
             <div class="bg">
                 <h1 class="heroes" style="text-align:center;font-size: 50pt;">content</h1>
-                <div>
-                    <p class="box"></p>
-                    <p class="box"></p>
-                    <p class="box"></p>
+                <script>
+                    $(document).ready(function(){
+                        $("button").click(function(){
+                        $("#menu").toggle();
+                        });
+                    });
+                </script>
+                <button>Toggle between hiding and showing the Menu</button>
+                <div id="menu">
+                <script>
+                    var i;
+                    for(i=1;i<=7;i++){
+                        document.write('<div class="gallery">');
+                        document.write('<a target="_blank" href="img/'+i+'.png">');
+                        document.write('<img src="img/'+i+'.png" alt="'+i+'" width="600"></a>');
+                        document.write('<div class="desc">Menu '+i+'</div></div>');
+                    }
+                </script>
                 </div>
                 
             </div>
